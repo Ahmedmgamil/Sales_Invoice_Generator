@@ -7,7 +7,7 @@ public class InvoiceHeader {
    private String InvoiceNumber;
    private String invoicedate;
 
-    private String Customername;
+    private String customerName;
 
     public String getInvoicedate() {
         return invoicedate;
@@ -18,11 +18,11 @@ public class InvoiceHeader {
     }
 
     public String getCustomername() {
-        return Customername;
+        return customerName;
     }
 
     public void setCustomername(String customername) {
-        Customername = customername;
+        customerName = customername;
     }
 
     public String getInvoiceNumber() {

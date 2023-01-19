@@ -1,12 +1,12 @@
 import Controller.InvoiceHeaderController;
 import Controller.InvoiceLinesController;
-import Controller.ItemController;
+
 import Model.InvoiceHeader;
 import Model.InvoiceLines;
 import Model.Item;
 import View.InvoiceHeaderView;
 import View.InvoiceLinesView;
-import View.ItemView;
+
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -68,7 +68,6 @@ public class Main {
             controller.updateView();
 
             saveInvoiceHeaderToCSV(headerModel);
-
             // save the invoice data to a CSV file
             saveInvoiceToCSV(model, headerModel);
             System.out.println("Do you want to create another invoice? (y/n)");

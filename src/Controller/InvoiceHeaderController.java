@@ -12,9 +12,9 @@ public class InvoiceHeaderController {
         this.view = view;
     }
 
-    public void setCustomername (String customername)
+    public void setCustomername (String customerName)
     {
-        model.setCustomername(customername);
+        model.setCustomername(customerName);
     }
     public void setInvoiceNumber(String invoiceNumber) {
         model.setInvoiceNumber(invoiceNumber);
