@@ -29,7 +29,10 @@ public class Item {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+    public Item ()
+    {
 
+    }
     public Item(String name, double price, int quantity) {
         this.name = name;
 

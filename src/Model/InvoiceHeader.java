@@ -2,6 +2,7 @@ package Model;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class InvoiceHeader {
    private String InvoiceNumber;
@@ -44,5 +45,10 @@ public class InvoiceHeader {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formatDateTime = now.format(formatter);
         return formatDateTime;
+    }
+
+    public void setDate(String date) {
+        this.invoicedate = date;
+
     }
 }

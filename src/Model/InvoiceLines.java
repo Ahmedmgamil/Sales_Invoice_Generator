@@ -13,6 +13,10 @@ public class InvoiceLines {
         this.header = header;
         this.items = new ArrayList<>();
     }
+    public InvoiceLines()
+    {
+
+    }
 
     public void addItem(Item item) {
         items.add(item);
