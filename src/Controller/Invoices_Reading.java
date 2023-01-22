@@ -33,7 +33,7 @@ public class Invoices_Reading {
     public ArrayList<InvoiceLines> readInvoiceLines(HashMap<String, InvoiceHeader> headers) throws FileNotFoundException {
         ArrayList<InvoiceLines> lines = new ArrayList<InvoiceLines>();
         Scanner scanner = new Scanner(new File("invoice.csv"));
-        scanner.nextLine(); //skip the header row
+
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             String[] values = line.split(",");
