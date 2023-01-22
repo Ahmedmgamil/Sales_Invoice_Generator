@@ -85,7 +85,7 @@ public class Main {
                     String response = scanner.next();
                     createAnotherInvoice = response.equalsIgnoreCase("y");
                 } while (createAnotherInvoice);
-                s.close();
+
             } else if (choice == 2) {
 
                 Invoices_Reading invoices_reading = new Invoices_Reading();
